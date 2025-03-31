@@ -1,0 +1,638 @@
+/* 
+   Comprehensive Responsive Styles for Sudhanshu Tiwari's Portfolio
+   This file contains all the responsive breakpoints and adjustments
+   to ensure the website looks great on all devices from mobile to desktop
+*/
+
+/* ===== Base Responsive Adjustments ===== */
+html {
+    font-size: 16px;
+}
+
+/* ===== Large Desktops (1400px and up) ===== */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-content {
+        gap: 6rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 3.5rem;
+    }
+}
+
+/* ===== Desktops (1200px - 1399px) ===== */
+@media (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+    
+    .hero-content {
+        gap: 4rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+    }
+    
+    .about-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* ===== Small Desktops and Laptops (992px - 1199px) ===== */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+        padding: 0 2rem;
+    }
+    
+    .hero-content {
+        gap: 3rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.75rem;
+    }
+    
+    .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .hero-stats {
+        flex-wrap: wrap;
+    }
+    
+    .section-title {
+        font-size: 2.25rem;
+    }
+    
+    .about-image {
+        max-width: 400px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .experience-card {
+        padding: 1.5rem;
+    }
+    
+    .certification-card {
+        padding: 1.25rem;
+    }
+    
+    .github-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== Tablets (768px - 991px) ===== */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .navbar {
+        padding: 1rem 0;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: var(--bg-color);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 2rem;
+        transition: all 0.3s ease;
+        z-index: 100;
+        overflow-y: auto;
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 1rem 0;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 3rem;
+    }
+    
+    .hero-text {
+        width: 100%;
+    }
+    
+    .hero-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .image-wrapper {
+        max-width: 350px;
+    }
+    
+    .social-bar {
+        justify-content: center;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .hero-stats {
+        justify-content: center;
+    }
+    
+    .tech-keywords {
+        justify-content: center;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .about-image {
+        margin: 0 auto;
+    }
+    
+    .about-text {
+        width: 100%;
+    }
+    
+    .about-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .about-details {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .detail-column {
+        width: 100%;
+    }
+    
+    .about-cta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .about-cta .btn {
+        width: 100%;
+    }
+    
+    .skills-tabs {
+        overflow-x: auto;
+        padding-bottom: 1rem;
+    }
+    
+    .tabs-header {
+        min-width: max-content;
+    }
+    
+    .experience-timeline {
+        padding-left: 2rem;
+    }
+    
+    .experience-card {
+        width: calc(100% - 2rem);
+    }
+    
+    .certification-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}
+
+/* ===== Large Mobile Devices (576px - 767px) ===== */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+        padding: 0 1.5rem;
+    }
+    
+    html {
+        font-size: 15px;
+    }
+    
+    .section {
+        padding: 4rem 0;
+    }
+    
+    .section-header {
+        margin-bottom: 3rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.25rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+    }
+    
+    .hero-stats {
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        padding: 0.75rem;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .experience-timeline::before {
+        left: 1rem;
+    }
+    
+    .experience-date {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+    }
+    
+    .experience-card {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .certification-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .github-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonial-card {
+        padding: 1.25rem;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .footer-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* ===== Small Mobile Devices (400px - 575px) ===== */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 1.25rem;
+    }
+    
+    html {
+        font-size: 14px;
+    }
+    
+    .section {
+        padding: 3.5rem 0;
+    }
+    
+    .section-title {
+        font-size: 1.75rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-badge {
+        font-size: 0.8rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    
+    .tech-keywords {
+        flex-wrap: wrap;
+    }
+    
+    .tech-keywords span {
+        margin: 0.25rem;
+    }
+    
+    .image-wrapper {
+        max-width: 280px;
+    }
+    
+    .tech-badge {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.25rem;
+    }
+    
+    .about-cta {
+        padding: 1.25rem;
+    }
+    
+    .tab-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .experience-timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .experience-timeline::before {
+        left: 0.75rem;
+    }
+    
+    .experience-dot {
+        width: 1.5rem;
+        height: 1.5rem;
+        left: 0;
+    }
+    
+    .testimonial-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    .testimonial-author {
+        margin-left: 0;
+    }
+    
+    .contact-item {
+        padding: 1.25rem;
+    }
+    
+    .contact-form {
+        padding: 1.25rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+/* ===== Very Small Mobile Devices (Up to 399px) ===== */
+@media (max-width: 399px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.75rem;
+    }
+    
+    .hero-description {
+        font-size: 0.95rem;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-item {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .image-wrapper {
+        max-width: 240px;
+    }
+    
+    .tech-badge {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.1rem;
+    }
+    
+    .experience-badge {
+        width: 5rem;
+        height: 5rem;
+        right: -1rem;
+        bottom: -1rem;
+    }
+    
+    .experience-badge .years {
+        font-size: 1.5rem;
+    }
+    
+    .experience-badge .text {
+        font-size: 0.7rem;
+    }
+    
+    .contact-item .icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .social-links a {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+}
+
+/* ===== Specific Component Adjustments ===== */
+
+/* Fix for navbar on medium screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-links li {
+        margin: 0 0.5rem;
+    }
+    
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+
+/* Fix for hero section on medium-large screens */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero-content {
+        align-items: center;
+    }
+    
+    .hero-text {
+        width: 55%;
+    }
+    
+    .hero-image {
+        width: 45%;
+    }
+}
+
+/* Fix for certification cards on medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .certification-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Fix for testimonial section on medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .testimonial-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Fix for project cards on medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Fix for article cards on medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .article-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Fix for contact section on medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+    .contact-content {
+        flex-direction: column;
+    }
+    
+    .contact-info, .contact-form {
+        width: 100%;
+    }
+}
+
+/* Fix for hamburger menu */
+@media (max-width: 991px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .hamburger .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease;
+        background-color: var(--text-color);
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    body.menu-open {
+        overflow: hidden;
+    }
+}
+
+/* Fix for theme toggle on mobile */
+@media (max-width: 767px) {
+    .theme-toggle {
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Fix for back to top button on mobile */
+@media (max-width: 767px) {
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        right: 15px;
+        bottom: 15px;
+    }
+    
+    .back-to-top i {
+        font-size: 1rem;
+    }
+}

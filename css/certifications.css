@@ -1,0 +1,294 @@
+/* ===== Certifications Section ===== */
+.certifications {
+    background-color: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.certifications::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 90% 10%, rgba(79, 70, 229, 0.1), transparent 30%);
+    z-index: -1;
+}
+
+.certifications-container {
+    margin-top: 2rem;
+}
+
+.certifications-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+    padding: 0.5rem 1.25rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.2);
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.certification-card {
+    background-color: var(--card-bg);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: var(--shadow);
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(79, 70, 229, 0.3);
+}
+
+.certification-badge {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(79, 70, 229, 0.05);
+    border-bottom: 1px solid var(--border-color);
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.certification-badge::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        transparent,
+        rgba(79, 70, 229, 0.1),
+        transparent 30%
+    );
+    animation: rotate-bg 8s linear infinite;
+    z-index: 1;
+}
+
+.certification-badge::after {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: rgba(79, 70, 229, 0.05);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    z-index: 2;
+}
+
+.certification-badge i,
+.certification-badge img {
+    position: relative;
+    z-index: 3;
+    transition: all 0.5s ease;
+}
+
+.certification-badge i {
+    font-size: 3.5rem;
+    color: var(--primary-color);
+}
+
+.certification-badge img {
+    max-width: 80px;
+    max-height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+.certification-card:hover .certification-badge i,
+.certification-card:hover .certification-badge img {
+    transform: scale(1.1) rotate(5deg);
+}
+
+@keyframes rotate-bg {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.certification-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.certification-content h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+    line-height: 1.4;
+}
+
+.certification-issuer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.75rem;
+}
+
+.issuer {
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.issue-date {
+    font-size: 0.85rem;
+    color: var(--text-tertiary);
+    margin-top: 0.25rem;
+}
+
+.credential-id {
+    font-size: 0.8rem;
+    color: var(--text-tertiary);
+    margin-bottom: 0.75rem;
+    font-family: monospace;
+    background-color: rgba(79, 70, 229, 0.05);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.certification-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+
+.cert-skill {
+    background-color: rgba(79, 70, 229, 0.1);
+    color: var(--primary-color);
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.cert-skill:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.certifications-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.load-more-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.load-more-btn i {
+    transition: transform 0.3s ease;
+}
+
+.load-more-btn.active i {
+    transform: rotate(180deg);
+}
+
+/* Initially hide certifications beyond the first 6 */
+.certification-card:nth-child(n+7) {
+    display: none;
+}
+
+/* When show-all class is added, display all certifications */
+.certifications-grid.show-all .certification-card {
+    display: flex;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .certifications-filter {
+        gap: 0.5rem;
+    }
+    
+    .filter-btn {
+        padding: 0.4rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .certifications-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    .certification-badge {
+        height: 100px;
+        padding: 1rem;
+    }
+
+    .certification-badge i {
+        font-size: 2.5rem;
+    }
+
+    .certification-badge img {
+        max-width: 70px;
+        max-height: 70px;
+    }
+    
+    .certification-content {
+        padding: 1.25rem;
+    }
+    
+    .certification-content h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .filter-btn {
+        font-size: 0.75rem;
+        padding: 0.35rem 0.8rem;
+    }
+}

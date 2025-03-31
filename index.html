@@ -1,0 +1,1974 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sudhanshu Tiwari | Developer Relations & Software Engineer</title>
+    <meta name="description" content="Sudhanshu Tiwari - Developer Relations enthusiast, Software Engineer, and Community Builder based in Jaipur, India. Passionate about technology and community.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/experience-update.css">
+    <link rel="stylesheet" href="css/certifications.css">
+    <link rel="stylesheet" href="css/volunteer.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/publications.css">
+    <link rel="stylesheet" href="css/github-showcase.css">
+    <link rel="stylesheet" href="css/articles-talks.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/beautify.css">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Sudhanshu Tiwari | Developer Relations & Software Engineer">
+    <meta property="og:description" content="Developer Relations enthusiast, Software Engineer, and Community Builder based in Jaipur, India. Passionate about connecting developers with technology.">
+    <meta property="og:image" content="images/social-preview.jpg">
+    <meta property="og:url" content="https://sudhanshutiwari.com">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="page-transition">
+    <!-- Loading Animation -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </div>
+
+    <!-- Decorative Blobs -->
+    <div class="blob hero-blob"></div>
+
+    <style>
+        /* Custom responsive blob positioning for index page */
+        .hero-blob {
+            top: -200px;
+            right: -200px;
+        }
+
+        .about-blob {
+            bottom: -200px;
+            left: -200px;
+        }
+
+        .skills-blob {
+            top: -200px;
+            left: -200px;
+        }
+
+        .experience-blob {
+            bottom: -200px;
+            right: -200px;
+        }
+
+        /* Responsive adjustments for blobs */
+        @media (max-width: 768px) {
+            .hero-blob, .about-blob, .skills-blob, .experience-blob {
+                width: 300px;
+                height: 300px;
+                filter: blur(60px);
+            }
+
+            .hero-blob {
+                top: -100px;
+                right: -100px;
+            }
+
+            .about-blob {
+                bottom: -100px;
+                left: -100px;
+            }
+
+            .skills-blob {
+                top: -100px;
+                left: -100px;
+            }
+
+            .experience-blob {
+                bottom: -100px;
+                right: -100px;
+            }
+
+            /* Hero image and tech badges responsive adjustments */
+            .blob-shape {
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+            }
+
+            .tech-badge {
+                width: 3rem;
+                height: 3rem;
+                font-size: 1.3rem;
+            }
+
+            .tech-badge:nth-child(1) {
+                top: 5%;
+                right: -1rem;
+            }
+
+            .tech-badge:nth-child(2) {
+                bottom: 5%;
+                right: -1rem;
+            }
+
+            .tech-badge:nth-child(3) {
+                bottom: 5%;
+                left: -1rem;
+            }
+
+            .tech-badge:nth-child(4) {
+                top: 5%;
+                left: -1rem;
+            }
+
+            .experience-badge {
+                width: 6rem;
+                height: 6rem;
+                bottom: -1rem;
+                right: -1rem;
+            }
+
+            .badge-content .years {
+                font-size: 1.75rem;
+            }
+
+            .badge-content .text {
+                font-size: 0.7rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .hero-blob, .about-blob, .skills-blob, .experience-blob {
+                width: 200px;
+                height: 200px;
+                filter: blur(40px);
+            }
+
+            .hero-blob {
+                top: -50px;
+                right: -50px;
+            }
+
+            .about-blob {
+                bottom: -50px;
+                left: -50px;
+            }
+
+            .skills-blob {
+                top: -50px;
+                left: -50px;
+            }
+
+            .experience-blob {
+                bottom: -50px;
+                right: -50px;
+            }
+
+            /* Hero image and tech badges responsive adjustments */
+            .tech-badge {
+                width: 2.5rem;
+                height: 2.5rem;
+                font-size: 1.1rem;
+            }
+
+            .tech-badge:nth-child(1) {
+                top: 5%;
+                right: -0.5rem;
+            }
+
+            .tech-badge:nth-child(2) {
+                bottom: 5%;
+                right: -0.5rem;
+            }
+
+            .tech-badge:nth-child(3) {
+                bottom: 5%;
+                left: -0.5rem;
+            }
+
+            .tech-badge:nth-child(4) {
+                top: 5%;
+                left: -0.5rem;
+            }
+
+            .experience-badge {
+                width: 5rem;
+                height: 5rem;
+                bottom: -0.75rem;
+                right: -0.75rem;
+            }
+
+            .badge-content .years {
+                font-size: 1.5rem;
+            }
+
+            .badge-content .text {
+                font-size: 0.6rem;
+            }
+
+            /* Hero badge and tech keywords responsive adjustments */
+            .hero-badge {
+                font-size: 0.75rem;
+                padding: 0.4rem 0.8rem;
+            }
+
+            .tech-keywords {
+                flex-wrap: wrap;
+                gap: 0.5rem;
+            }
+
+            .tech-keywords span {
+                font-size: 0.75rem;
+                padding: 0.3rem 0.6rem;
+            }
+        }
+    </style>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#">ST<span>.</span></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#blog">Blog & Speaking</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                    <li><a href="#github-activity">GitHub</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Software Engineer & DevRel Enthusiast</span>
+                    </div>
+
+                    <h1>Building bridges between <span class="gradient-text">developers</span> and <span class="gradient-text">technology</span></h1>
+                    <p class="hero-description">I'm <strong>Sudhanshu Tiwari</strong>, a Developer Relations enthusiast and Software Engineer passionate about creating exceptional developer experiences and fostering tech communities.</p>
+
+                    <!-- Tech Keywords -->
+                    <div class="tech-keywords">
+                        <span>Developer Relations</span>
+                        <span>Software Engineering</span>
+                        <span>AI & Cloud</span>
+                        <span>Community Building</span>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Tech Events Organized</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Community Members</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn primary-btn">Get in Touch <i class="fas fa-arrow-right"></i></a>
+                        <a href="#blog" class="btn secondary-btn">View My Work</a>
+                    </div>
+
+                    <div class="social-bar">
+                        <a href="https://github.com/sudhanshutiwari264" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tiwari-sudhanshu/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/sudhanshusx" target="_blank" title="Twitter/X"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <!-- Image will be replaced by CSS if not available -->
+                        <img src="images/profile.jpeg" alt="Sudhanshu Tiwari" onerror="this.style.display='none'">
+                        <div class="blob-shape"></div>
+                    </div>
+                   <div class="tech-badges">
+                        <div class="tech-badge">
+                          <i class="fab fa-react"></i>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="tech-badge">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <!-- Decorative Blob -->
+        <div class="blob about-blob"></div>
+
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">About Me</span>
+                <h2 class="section-title">Bridging the gap between <span class="highlight">developers</span> and <span class="highlight">technology</span></h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <!-- Image will be replaced by CSS if not available -->
+                        <img src="images/about.jpg" alt="Sudhanshu Tiwari" onerror="this.style.display='none'">
+                        <div class="image-pattern"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <div class="badge-content">
+                            <span class="years">2+</span>
+                            <span class="text">Years Industry<br>Exposure</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="about-text">
+                    <p class="lead-text">I'm a <strong>Developer Relations enthusiast</strong> and <strong>Software Engineer</strong> with a passion for creating exceptional developer experiences and fostering tech communities.</p>
+
+                    <p>Currently leading Developer Relations, Business Analysis, and Technical Initiatives at Formidium, I combine my technical expertise with community engagement skills to build bridges between complex technologies and developer communities. I'm pursuing my B.Tech in Computer Science and Engineering with AI specialization at Rajasthan Technical University (RTU), Kota (2021-2025).</p>
+
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 10px; font-style: italic;">All projects and content on this site represent my personal work, created outside of employment duties.</p>
+
+                    <div class="about-cards">
+                        <div class="about-card">
+                            <div class="card-icon"><i class="fas fa-users"></i></div>
+                            <h3>Developer Advocacy</h3>
+                            <p>I create technical content, organize community events, and help developers succeed with new technologies.</p>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="card-icon"><i class="fas fa-code"></i></div>
+                            <h3>Software Engineering</h3>
+                            <p>I build web applications with modern frameworks, focusing on security, performance, and user experience.</p>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="card-icon"><i class="fas fa-cloud"></i></div>
+                            <h3>Cloud & AI</h3>
+                            <p>I work with cloud platforms and AI technologies to create scalable, intelligent solutions.</p>
+                        </div>
+
+                        <div class="about-card">
+                            <div class="card-icon"><i class="fas fa-microphone"></i></div>
+                            <h3>Public Speaking</h3>
+                            <p>I share knowledge through tech talks, workshops, and conference presentations.</p>
+                        </div>
+                    </div>
+
+                    <div class="about-details">
+                        <div class="detail-column">
+                            <div class="detail-item">
+                                <span class="detail-label">Name</span>
+                                <span class="detail-value">Sudhanshu Tiwari</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Education</span>
+                                <span class="detail-value">B.Tech in CSE (AI), RTU Kota</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Jaipur, Rajasthan, India</span>
+                            </div>
+                        </div>
+                        <div class="detail-column">
+                            <div class="detail-item">
+                                <span class="detail-label">Email</span>
+                                <span class="detail-value"><a href="mailto:sudhanshutiwari264@gmail.com">sudhanshutiwari264@gmail.com</a></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">GitHub</span>
+                                <span class="detail-value"><a href="https://github.com/sudhanshutiwari264" target="_blank">@sudhanshutiwari264</a></span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Professional Focus</span>
+                                <span class="detail-value">Software Engineering | Developer Experience | Community Building</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-cta">
+                        <a href="#contact" class="btn primary-btn">Let's Connect <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <!-- Decorative Blob -->
+        <div class="blob skills-blob"></div>
+
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Expertise</span>
+                <h2 class="section-title">Skills that drive <span class="highlight">exceptional</span> developer experiences</h2>
+            </div>
+
+            <div class="skills-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="devrel">Developer Relations</button>
+                    <button class="tab-btn" data-tab="tech">Technical Skills</button>
+                    <button class="tab-btn" data-tab="soft">Soft Skills</button>
+                </div>
+
+                <div class="tabs-content">
+                    <!-- DevRel Skills Tab -->
+                    <div class="tab-pane active" id="devrel-tab">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h3>Community Building</h3>
+                                    <p>Creating and nurturing developer communities through events, programs, and engagement strategies.</p>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                        </div>
+                                        <span class="level-text">Expert</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-pencil-alt"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h3>Technical Content</h3>
+                                    <p>Creating tutorials, documentation, blog posts, and other educational materials for developers.</p>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-microphone"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h3>Public Speaking</h3>
+                                    <p>Delivering technical talks, workshops, and presentations at conferences and meetups.</p>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-card">
+                                <div class="skill-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="skill-info">
+                                    <h3>Event Management</h3>
+                                    <p>Planning and executing hackathons, workshops, webinars, and other developer-focused events.</p>
+                                    <div class="skill-level">
+                                        <div class="level-dots">
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot active"></span>
+                                            <span class="dot"></span>
+                                        </div>
+                                        <span class="level-text">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Skills Tab -->
+                    <div class="tab-pane" id="tech-tab">
+                        <div class="tech-skills">
+                            <div class="tech-category">
+                                <h3>Frontend Development</h3>
+                                <div class="tech-tags">
+                                    <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                                    <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                                    <span class="tech-tag"><i class="fab fa-js"></i> JavaScript</span>
+                                    <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                                    <span class="tech-tag"><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                                </div>
+                            </div>
+
+                            <div class="tech-category">
+                                <h3>Backend Development</h3>
+                                <div class="tech-tags">
+                                    <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                                    <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+                                    <span class="tech-tag"><i class="fas fa-database"></i> MongoDB</span>
+                                    <span class="tech-tag"><i class="fas fa-server"></i> Express.js</span>
+                                    <span class="tech-tag"><i class="fas fa-key"></i> Authentication</span>
+                                    <span class="tech-tag"><i class="fas fa-shield-alt"></i> Security</span>
+                                </div>
+                            </div>
+
+                            <div class="tech-category">
+                                <h3>Cloud & DevOps</h3>
+                                <div class="tech-tags">
+                                    <span class="tech-tag"><i class="fab fa-microsoft"></i> Azure</span>
+                                    <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+                                    <span class="tech-tag"><i class="fab fa-github"></i> GitHub Actions</span>
+                                    <span class="tech-tag"><i class="fas fa-network-wired"></i> CI/CD</span>
+                                </div>
+                            </div>
+
+                            <div class="tech-category">
+                                <h3>Tools & Others</h3>
+                                <div class="tech-tags">
+                                    <span class="tech-tag"><i class="fab fa-git-alt"></i> Git</span>
+                                    <span class="tech-tag"><i class="fab fa-github"></i> GitHub</span>
+                                    <span class="tech-tag"><i class="fas fa-terminal"></i> Command Line</span>
+                                    <span class="tech-tag"><i class="fas fa-code"></i> VS Code</span>
+                                    <span class="tech-tag"><i class="fas fa-project-diagram"></i> Postman</span>
+                                    <span class="tech-tag"><i class="fas fa-brain"></i> AI/ML Basics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills Tab -->
+                    <div class="tab-pane" id="soft-tab">
+                        <div class="soft-skills">
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="soft-skill-content">
+                                    <h3>Communication</h3>
+                                    <p>Effectively conveying complex technical concepts to diverse audiences, from beginners to experts.</p>
+                                </div>
+                            </div>
+
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="soft-skill-content">
+                                    <h3>Problem Solving</h3>
+                                    <p>Analyzing challenges and developing creative solutions with a methodical approach.</p>
+                                </div>
+                            </div>
+
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="soft-skill-content">
+                                    <h3>Empathy</h3>
+                                    <p>Understanding developer needs and pain points to create better experiences and solutions.</p>
+                                </div>
+                            </div>
+
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-users-cog"></i>
+                                </div>
+                                <div class="soft-skill-content">
+                                    <h3>Leadership</h3>
+                                    <p>Guiding teams and communities toward shared goals with vision and motivation.</p>
+                                </div>
+                            </div>
+
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-tasks"></i>
+                                </div>
+                                <div class="soft-skill-content">
+                                    <h3>Project Management</h3>
+                                    <p>Planning, organizing, and executing projects efficiently to meet deadlines and objectives.</p>
+                                </div>
+                            </div>
+
+                            <div class="soft-skill">
+                                <div class="soft-skill-icon">
+                                    <i class="fas fa-book-reader"></i>
+                                </div>
+                                <div class="soft-skill-content">
+                                    <h3>Continuous Learning</h3>
+                                    <p>Staying current with emerging technologies and industry trends through self-directed learning.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <div class="section-header">
+                <h2>Community & Volunteer Experience</h2>
+                <p>My involvement in tech communities, events, and volunteer roles</p>
+            </div>
+
+            <div class="community-tabs">
+                <button class="tab-button active" data-tab="events">Tech Events</button>
+                <button class="tab-button" data-tab="volunteer">Volunteer Roles</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Tech Events Tab -->
+                <div class="tab-pane active" id="events-tab">
+                    <div class="events-content">
+                        <div class="event-card">
+                            <div class="event-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="event-details">
+                                <h3>Events Organized</h3>
+                                <p class="event-role">Lead Organizer & Technical Coordinator</p>
+                                <ul class="event-list">
+                                    <li><span>API Day Jaipur 2023</span> - Led a team of 12+ and secured sponsorships from Postman, Google for Developers, and Coding Minutes</li>
+                                    <li><span>Poornima Hackathon 2022</span> - Coordinated technical challenges and participant engagement</li>
+                                    <li><span>Formidium Hackathon Goa</span> - Managed technical aspects and community engagement</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="event-details">
+                                <h3>Events Attended</h3>
+                                <p class="event-role">Active Participant & Community Member</p>
+                                <ul class="event-list">
+                                    <li><span>Indian Blockchain Week 2024</span> - Networked with blockchain professionals and learned about latest trends</li>
+                                    <li><span>NASSCOM AI Confluence</span> - Participated in AI workshops and panel discussions</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="event-card">
+                            <div class="event-icon">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div class="event-details">
+                                <h3>Formidium Community Initiatives</h3>
+                                <p class="event-role">Community & Technical Lead</p>
+                                <p>Responsible for organizing and managing technical aspects of Formidium's community events. Facilitate knowledge sharing and networking opportunities for tech professionals through workshops, webinars, and hackathons.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volunteer Roles Tab -->
+                <div class="tab-pane" id="volunteer-tab">
+                    <div class="volunteer-timeline">
+                        <!-- HackerEarth Campus Ambassador -->
+                        <div class="volunteer-item">
+                            <div class="volunteer-dot"></div>
+                            <div class="volunteer-content">
+                                <div class="volunteer-header">
+                                    <h3>Campus Ambassador</h3>
+                                    <div class="volunteer-meta">
+                                        <span class="volunteer-org">HackerEarth</span>
+                                        <span class="volunteer-duration">Dec 2022 - Sep 2024 · 1 yr 10 mos</span>
+                                        <span class="volunteer-category">Science and Technology</span>
+                                    </div>
+                                </div>
+                                <div class="volunteer-body">
+                                    <p>Served as an official campus representative for HackerEarth, promoting coding culture and technical events on campus.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CRIO ADVOCATE -->
+                        <div class="volunteer-item">
+                            <div class="volunteer-dot"></div>
+                            <div class="volunteer-content">
+                                <div class="volunteer-header">
+                                    <h3>CRIO ADVOCATE, OSS Maintainer</h3>
+                                    <div class="volunteer-meta">
+                                        <span class="volunteer-org">Crio.Do</span>
+                                        <span class="volunteer-duration">Oct 2020 - Sep 2024 · 4 yrs</span>
+                                        <span class="volunteer-category">Science and Technology</span>
+                                    </div>
+                                </div>
+                                <div class="volunteer-body">
+                                    <p>Participated in @Crio.Do "I Believe in Doing" Challenge, Hacktoberfest 2020 edition. Gained hands-on experience with GitHub and git. Maintained the quality of Microbytes and took lead in the Pull Request Management team. Carefully reviewed content and documentation proposed by participants and helped the community on Slack by resolving issues.</p>
+                                    <div class="volunteer-links">
+                                        <a href="https://github.com/Crio-Bytes/" target="_blank" class="link-item">
+                                            <i class="fab fa-github"></i> Crio-Bytes
+                                        </a>
+                                        <a href="https://github.com/Crio-WFH" target="_blank" class="link-item">
+                                            <i class="fab fa-github"></i> Crio-WFH
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- GeeksForGeeks PCE -->
+                        <div class="volunteer-item">
+                            <div class="volunteer-dot"></div>
+                            <div class="volunteer-content">
+                                <div class="volunteer-header">
+                                    <h3>Public Relations and Outreach Head</h3>
+                                    <div class="volunteer-meta">
+                                        <span class="volunteer-org">GeeksForGeeks PCE</span>
+                                        <span class="volunteer-duration">Nov 2022 - Present · 2 yrs 5 mos</span>
+                                        <span class="volunteer-category">Science and Technology</span>
+                                    </div>
+                                </div>
+                                <div class="volunteer-body">
+                                    <p>Leading public relations and outreach initiatives for the GeeksForGeeks chapter at Poornima College of Engineering.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Confederation of Indian Industry -->
+                        <div class="volunteer-item">
+                            <div class="volunteer-dot"></div>
+                            <div class="volunteer-content">
+                                <div class="volunteer-header">
+                                    <h3>Student Volunteer</h3>
+                                    <div class="volunteer-meta">
+                                        <span class="volunteer-org">Confederation of Indian Industry</span>
+                                        <span class="volunteer-duration">Oct 2022 · 1 mo</span>
+                                        <span class="volunteer-category">Economic Empowerment</span>
+                                    </div>
+                                </div>
+                                <div class="volunteer-body">
+                                    <p>Assigned as a member of the stand-by team to assist during The Rajasthan Invest Summit.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- The Girl Code -->
+                        <div class="volunteer-item">
+                            <div class="volunteer-dot"></div>
+                            <div class="volunteer-content">
+                                <div class="volunteer-header">
+                                    <h3>Public Relations Manager</h3>
+                                    <div class="volunteer-meta">
+                                        <span class="volunteer-org">The Girl Code</span>
+                                        <span class="volunteer-duration">Aug 2020 - Oct 2020 · 3 mos</span>
+                                    </div>
+                                </div>
+                                <div class="volunteer-body">
+                                    <p>Managed public relations for The Girl Code, an organization focused on bridging the gender gap in technology.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- NATIONAL CADET CORPS -->
+                        <div class="volunteer-item">
+                            <div class="volunteer-dot"></div>
+                            <div class="volunteer-content">
+                                <div class="volunteer-header">
+                                    <h3>Cadet</h3>
+                                    <div class="volunteer-meta">
+                                        <span class="volunteer-org">NATIONAL CADET CORPS - India</span>
+                                        <span class="volunteer-duration">Jan 2016 - Jan 2018 · 2 yrs</span>
+                                        <span class="volunteer-category">Social Services</span>
+                                    </div>
+                                </div>
+                                <div class="volunteer-body">
+                                    <p>Attended an annual training camp at Kota during my second year of NCC where my troop secured 2nd rank in overall performance, 2nd rank in parade, 1st rank in kabbadi, and 3rd rank in basketball. Participated in activities like spreading awareness for cleanliness. This experience helped improve my leadership, team management, and time management skills.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- The Bharat Scouts and Guides -->
+                        <div class="volunteer-item">
+                            <div class="volunteer-dot"></div>
+                            <div class="volunteer-content">
+                                <div class="volunteer-header">
+                                    <h3>Student Volunteer</h3>
+                                    <div class="volunteer-meta">
+                                        <span class="volunteer-org">The Bharat Scouts and Guides</span>
+                                        <span class="volunteer-duration">Jul 2014 - Jul 2017 · 3 yrs 1 mo</span>
+                                        <span class="volunteer-category">Social Services</span>
+                                    </div>
+                                </div>
+                                <div class="volunteer-body">
+                                    <p>Participated in various social service activities and training programs as part of The Bharat Scouts and Guides.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <!-- Decorative Blob -->
+        <div class="blob experience-blob"></div>
+
+        <div class="container">
+            <div class="section-header">
+                <h2>Experience & Education</h2>
+                <p>My professional journey and academic background</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Developer Relations, Business Analysis & Technical Initiatives</h3>
+                            <span class="company">Formidium</span>
+                            <span class="date">Jul 2024 - Present · 9 mos</span>
+                            <span class="location">Jaipur, Rajasthan, India · On-site</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>At Formidium, I lead Developer Relations, Business Analysis, and Technical Initiatives, driving community growth, process optimization, and technical improvements. We built Formidium Talk, scaling the community from 0 to 500+ members, and organized the Goa Hackathon (400+ participants). I've worked on web platform enhancements and the Data Archival Project (DA) while also handling Business Analysis (BA) for the Notification Microservice. Collaborating with teams across functions, I ensure technical strategies align with business goals, fostering innovation and efficiency.</p>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Communication</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">Developer Relations</span>
+                                <span class="skill-tag">Business Analysis</span>
+                                <span class="skill-tag">Community Building</span>
+                                <span class="skill-tag">Technical Project Management</span>
+                                <span class="skill-tag">Jira</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Main Organizer</h3>
+                            <span class="company">API DAY JAIPUR</span>
+                            <span class="date">May 2023 - Present</span>
+                            <span class="location">Jaipur, Rajasthan, India · Hybrid</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>As an organizer, I led a team of 12+ and secured sponsorships from Postman, Google for Developers, and Coding Minutes. With careful planning, we received almost 900+ registrations and hosted 200 attendees at the event. It helped me by improving my leadership and conversational skills and learning valuable lessons in time management and team handling.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Managed Network Expert</h3>
+                            <span class="company">Chegg Inc.</span>
+                            <span class="date">May 2022 - May 2024</span>
+                            <span class="location">India · Remote</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>As a remote Managed Network Expert at Chegg, I helped students with Computer Science and Programming doubts.</p>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Node.js</span>
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">MongoDB</span>
+                                <span class="skill-tag">SDLC</span>
+                                <span class="skill-tag">Programming</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Azure Cloud Trainee</h3>
+                            <span class="company">R-CAT</span>
+                            <span class="date">Jun 2023 - Aug 2023</span>
+                            <span class="location">Jaipur, Rajasthan, India · On-site</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Implemented an Azure AI solution utilizing computer vision, natural language processing, knowledge mining, and generative AI solutions. Created a minor project that predicted sentence negativity using an Azure API endpoint. Prepared for Azure AI Engineer Associate certification from Microsoft.</p>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Microsoft Azure</span>
+                                <span class="skill-tag">Azure Machine Learning</span>
+                                <span class="skill-tag">Azure Cloud Services</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Azure AI Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Website Developer Intern</h3>
+                            <span class="company">SHRI JASNATH TESTING AND CALIBRATION LABORATORY</span>
+                            <span class="date">Jul 2022 - Feb 2023</span>
+                            <span class="location">Jaipur, Rajasthan, India · Hybrid</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>I had the opportunity to work on the company's landing website and utilized a variety of tools, including Bootstrap, HTML, CSS, and JavaScript, to create a dynamic and engaging page. The website was designed with the aim of attracting visitors and providing them with a seamless browsing experience.</p>
+                            <div class="skills-tags">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Community Manager Intern</h3>
+                            <span class="company">Crio.Do</span>
+                            <span class="date">Mar 2021 - Dec 2021</span>
+                            <span class="location">Bengaluru, Karnataka, India · Remote</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>During my internship, I worked on PhonePe's Women in Tech Scholarship Program. I collaborated with over 30 colleges, had 1,200+ registrations through the referral program, and an overall participation of 15000+ participants.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item education">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Rajasthan Technical University (RTU), Kota</h3>
+                            <span class="degree">B.Tech in Computer Science & Engineering (Artificial Intelligence)</span>
+                            <span class="date">Oct 2021 - Jul 2025</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>Activities and societies: Postman Student Leader. Core-team Member, Poornima Innovation And Incubation Cell. Organiser Poorima Hackathon. Member, Cultural Club. Developer Advocate, Crio.do. Mentor at AICTE PIET IDEALab Patented IOT-based application of the ultrasonic sensor.</p>
+                            <p>I was awarded the prestigious Coder Of The Year award during Kalanidhi 2022, the college's annual event. Managing Public Relations and Outreach at the GEEKSFORGEEKS PCE chapter. In 2022, I participated in IIT Jodhpur's Youth Conclave as a representative of our college and was a finalist in the IDEATHON competition. Winner AADHAR 2022 Software Category.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item education">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Kendriya Vidyalaya</h3>
+                            <span class="degree">ALL INDIA SENIOR SECONDARY EXAMINATION CERTIFICATE (AISSCE)</span>
+                            <span class="date">Jan 2013 - Jul 2021</span>
+                        </div>
+                        <div class="timeline-body">
+                            <p>I studied Physics, Chemistry, Mathematics and Computer Science (Python, MySQL and MongoDB) in my plus two years.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2>Certifications & Credentials</h2>
+                <p>Professional certifications and achievements that validate my skills</p>
+            </div>
+
+            <div class="certifications-container">
+                <div class="certifications-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+                    <button class="filter-btn" data-filter="cloud">Cloud</button>
+                    <button class="filter-btn" data-filter="programming">Programming</button>
+                    <button class="filter-btn" data-filter="data">Data</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                </div>
+
+                <div class="certifications-grid">
+                    <!-- Microsoft Azure AI Engineer -->
+                    <div class="certification-card" data-categories="ai-ml cloud">
+                        <div class="certification-badge">
+                            <i class="fab fa-microsoft"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>Microsoft Certified: Azure AI Engineer Associate</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">Microsoft</span>
+                                <span class="issue-date">Issued Feb 2024 · Expires Feb 2025</span>
+                            </div>
+                            <p class="credential-id">Credential ID: CDE555E7EF68C4D0</p>
+                            <div class="certification-skills">
+                                <span class="cert-skill">Python</span>
+                                <span class="cert-skill">Data Analysis</span>
+                                <span class="cert-skill">Azure AI</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Fundamentals -->
+                    <div class="certification-card" data-categories="ai-ml data">
+                        <div class="certification-badge">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>AI Fundamentals for Data Professionals</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">LinkedIn</span>
+                                <span class="issue-date">Issued Dec 2023</span>
+                            </div>
+                            <div class="certification-skills">
+                                <span class="cert-skill">Artificial Intelligence</span>
+                                <span class="cert-skill">Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Python Quick Start -->
+                    <div class="certification-card" data-categories="programming">
+                        <div class="certification-badge">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>Python Quick Start</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">LinkedIn</span>
+                                <span class="issue-date">Issued Dec 2023</span>
+                            </div>
+                            <div class="certification-skills">
+                                <span class="cert-skill">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SQL Training -->
+                    <div class="certification-card" data-categories="data">
+                        <div class="certification-badge">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>Industrial Training in SQL</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">Codextra Protech Private Limited</span>
+                                <span class="issue-date">Issued Nov 2023</span>
+                            </div>
+                            <p class="credential-id">Credential ID: CPPLTSQL11230002</p>
+                            <div class="certification-skills">
+                                <span class="cert-skill">MySQL</span>
+                                <span class="cert-skill">SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- KPMG Data Analytics -->
+                    <div class="certification-card" data-categories="data">
+                        <div class="certification-badge">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>KPMG AU - Data Analytics Job Simulation</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">Forage</span>
+                                <span class="issue-date">Issued Nov 2023</span>
+                            </div>
+                            <p class="credential-id">Credential ID: Do5XnBrkkj7fuPuZX</p>
+                        </div>
+                    </div>
+
+                    <!-- CSS Certificate -->
+                    <div class="certification-card" data-categories="web">
+                        <div class="certification-badge">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>CSS Certificate</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">HackerRank</span>
+                                <span class="issue-date">Issued Sep 2023</span>
+                            </div>
+                            <p class="credential-id">Credential ID: fab21afa8a5d</p>
+                            <div class="certification-skills">
+                                <span class="cert-skill">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HackerEarth Campus Ambassador -->
+                    <div class="certification-card" data-categories="all">
+                        <div class="certification-badge">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>HackerEarth Campus Ambassador</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">HackerEarth</span>
+                                <span class="issue-date">Issued Aug 2023</span>
+                            </div>
+                            <p class="credential-id">Credential ID: HECA197</p>
+                            <div class="certification-skills">
+                                <span class="cert-skill">Community Outreach</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning Foundations -->
+                    <div class="certification-card" data-categories="ai-ml data">
+                        <div class="certification-badge">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>Machine Learning Foundations: Calculus</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">LinkedIn</span>
+                                <span class="issue-date">Issued Apr 2023</span>
+                            </div>
+                            <p class="credential-id">Credential ID: Abd3Sz5Qom8jI7gYV0g99sYbuRfZ</p>
+                            <div class="certification-skills">
+                                <span class="cert-skill">NumPy</span>
+                                <span class="cert-skill">Calculus</span>
+                                <span class="cert-skill">SciPy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Postman Student Leader -->
+                    <div class="certification-card" data-categories="web">
+                        <div class="certification-badge">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>Postman Student Leader</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">Canvas Credentials (Badgr)</span>
+                                <span class="issue-date">Issued Apr 2023</span>
+                            </div>
+                            <p class="credential-id">Credential ID: 643515c5b861840101125945</p>
+                            <div class="certification-skills">
+                                <span class="cert-skill">Postman API</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate of Publication -->
+                    <div class="certification-card" data-categories="ai-ml">
+                        <div class="certification-badge">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>Certificate of Publication</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">STM Journals, the Publishing Company</span>
+                                <span class="issue-date">Issued Mar 2023</span>
+                            </div>
+                            <div class="certification-skills">
+                                <span class="cert-skill">Artificial Intelligence</span>
+                                <span class="cert-skill">Computer Vision</span>
+                                <span class="cert-skill">Digital Image Processing</span>
+                                <span class="cert-skill">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Postman Student Expert -->
+                    <div class="certification-card" data-categories="web">
+                        <div class="certification-badge">
+                            <i class="fas fa-satellite"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>Postman Student Expert</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">Canvas Credentials (Badgr)</span>
+                                <span class="issue-date">Issued Jun 2022</span>
+                            </div>
+                            <p class="credential-id">Credential ID: 629c69d907262165f8d08db0</p>
+                            <div class="certification-skills">
+                                <span class="cert-skill">Postman API</span>
+                                <span class="cert-skill">API Testing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Analysis Using Python -->
+                    <div class="certification-card" data-categories="data programming">
+                        <div class="certification-badge">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="certification-content">
+                            <h3>Data Analysis Using Python</h3>
+                            <div class="certification-issuer">
+                                <span class="issuer">IBM</span>
+                                <span class="issue-date">Issued Jun 2021</span>
+                            </div>
+                            <p class="credential-id">Credential ID: e32a88bca5674b939a4375b82a2e6d49</p>
+                            <div class="certification-skills">
+                                <span class="cert-skill">Python</span>
+                                <span class="cert-skill">Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certifications-more">
+                    <button class="btn primary-btn load-more-btn">
+                        <span>Load More Certifications</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles & Talks Section -->
+    <section id="blog" class="articles-talks">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">My Articles & Talks</span>
+                <h2 class="section-title">Sharing <span class="highlight">knowledge</span> through <span class="highlight">writing</span> and <span class="highlight">speaking</span></h2>
+                <p class="section-description">Exploring technical concepts and sharing insights with the developer community</p>
+            </div>
+
+            <!-- Content Tabs -->
+            <div class="content-tabs">
+                <button class="content-tab active" data-filter="all">
+                    <i class="fas fa-th tab-icon"></i>All Content
+                </button>
+                <button class="content-tab" data-filter="article">
+                    <i class="fas fa-file-alt tab-icon"></i>Articles
+                </button>
+                <button class="content-tab" data-filter="talk">
+                    <i class="fas fa-microphone-alt tab-icon"></i>Talks & Events
+                </button>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <!-- Featured Article - Data Visualization -->
+                <div class="content-card featured-content" data-type="article">
+                    <div class="content-image-container">
+                        <div class="content-icon">
+                            <i class="fas fa-chart-pie"></i>
+                        </div>
+                        <span class="content-type">Featured Article</span>
+                    </div>
+                    <div class="content-details">
+                        <h3 class="content-title">Data Visualization Using Python</h3>
+                        <div class="content-meta">
+                            <div class="meta-item">
+                                <i class="fab fa-medium"></i>
+                                <span>Medium</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>2023</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                        <p class="content-excerpt">A comprehensive guide to data visualization techniques using Python libraries like Matplotlib, Seaborn, and Plotly. Learn how to create stunning visualizations that effectively communicate your data insights and make your analysis more impactful.</p>
+                        <div class="content-tags">
+                            <span class="content-tag">Python</span>
+                            <span class="content-tag">Data Visualization</span>
+                            <span class="content-tag">Data Science</span>
+                            <span class="content-tag">Matplotlib</span>
+                            <span class="content-tag">Seaborn</span>
+                        </div>
+                        <a href="https://medium.com/@sudhanshutiwari264/data-visualization-using-python-3a5683b0f5dc" class="content-link" target="_blank">
+                            Read Full Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- API Day Jaipur Talk -->
+                <div class="content-card" data-type="talk">
+                    <div class="content-image-container">
+                        <div class="content-icon">
+                            <i class="fas fa-microphone-alt"></i>
+                        </div>
+                        <span class="content-type talk">Talk</span>
+                    </div>
+                    <div class="content-details">
+                        <h3 class="content-title">API Day Jaipur</h3>
+                        <div class="content-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jaipur, India</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>2023</span>
+                            </div>
+                        </div>
+                        <p class="content-excerpt">Speaker at API Day Jaipur, sharing insights on API development, best practices, and emerging trends in the API ecosystem. The talk covered RESTful design principles, authentication strategies, and real-world implementation examples.</p>
+                        <div class="content-tags">
+                            <span class="content-tag">API</span>
+                            <span class="content-tag">Public Speaking</span>
+                            <span class="content-tag">Tech Events</span>
+                        </div>
+                        <a href="https://lu.ma/umulp1zq" class="content-link" target="_blank">
+                            Event Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- HTTP, HTTPS, and API Article -->
+                <div class="content-card" data-type="article">
+                    <div class="content-image-container">
+                        <div class="content-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <span class="content-type">Article</span>
+                    </div>
+                    <div class="content-details">
+                        <h3 class="content-title">Navigating the Data Communication Landscape: HTTP, HTTPS, and API</h3>
+                        <div class="content-meta">
+                            <div class="meta-item">
+                                <i class="fab fa-medium"></i>
+                                <span>Medium</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>2023</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-clock"></i>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                        <p class="content-excerpt">An exploration of modern data communication protocols and APIs, explaining how they work together in web applications. This article breaks down complex concepts into understandable components for developers.</p>
+                        <div class="content-tags">
+                            <span class="content-tag">API</span>
+                            <span class="content-tag">HTTP</span>
+                            <span class="content-tag">Web Development</span>
+                            <span class="content-tag">Security</span>
+                        </div>
+                        <a href="https://medium.com/@sudhanshutiwari264/navigating-the-data-communication-landscape-the-role-of-http-https-and-api-5cf998232d13" class="content-link" target="_blank">
+                            Read Full Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Exploring RAM in Linux -->
+                <div class="content-card" data-type="article">
+                    <div class="content-image-container">
+                        <div class="content-icon">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <span class="content-type">Article</span>
+                    </div>
+                    <div class="content-details">
+                        <h3 class="content-title">Exploring RAM in Linux</h3>
+                        <div class="content-meta">
+                            <div class="meta-item">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>September 29, 2021</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-eye"></i>
+                                <span>500+ views</span>
+                            </div>
+                        </div>
+                        <p class="content-excerpt">An exploration of RAM in Linux systems, including what RAM contains, how to access it, and tools for memory management and forensics. Learn about memory allocation, monitoring, and optimization techniques.</p>
+                        <div class="content-tags">
+                            <span class="content-tag">Linux</span>
+                            <span class="content-tag">Memory</span>
+                            <span class="content-tag">Forensics</span>
+                            <span class="content-tag">System Administration</span>
+                        </div>
+                        <a href="https://www.linkedin.com/pulse/exploring-ram-linux-sudhanshu-tiwari/" class="content-link" target="_blank">
+                            Read Full Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- How to Use espeak-ng in Linux -->
+                <div class="content-card" data-type="article">
+                    <div class="content-image-container">
+                        <div class="content-icon">
+                            <i class="fas fa-volume-up"></i>
+                        </div>
+                        <span class="content-type">Article</span>
+                    </div>
+                    <div class="content-details">
+                        <h3 class="content-title">How to Use espeak-ng in Linux</h3>
+                        <div class="content-meta">
+                            <div class="meta-item">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>September 23, 2021</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-eye"></i>
+                                <span>300+ views</span>
+                            </div>
+                        </div>
+                        <p class="content-excerpt">A guide to using espeak-ng for text-to-speech in Linux, including basic commands, changing languages, adjusting speed and pitch, and creating audio files. Perfect for developers working on accessibility features.</p>
+                        <div class="content-tags">
+                            <span class="content-tag">Linux</span>
+                            <span class="content-tag">TTS</span>
+                            <span class="content-tag">Command Line</span>
+                            <span class="content-tag">Accessibility</span>
+                        </div>
+                        <a href="https://www.linkedin.com/pulse/how-use-espeak-ng-linux-sudhanshu-tiwari/" class="content-link" target="_blank">
+                            Read Full Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Zenity And How to Use It -->
+                <div class="content-card" data-type="article">
+                    <div class="content-image-container">
+                        <div class="content-icon">
+                            <i class="fas fa-window-restore"></i>
+                        </div>
+                        <span class="content-type">Article</span>
+                    </div>
+                    <div class="content-details">
+                        <h3 class="content-title">Zenity And How to Use It</h3>
+                        <div class="content-meta">
+                            <div class="meta-item">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-calendar-alt"></i>
+                                <span>September 19, 2021</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="far fa-eye"></i>
+                                <span>400+ views</span>
+                            </div>
+                        </div>
+                        <p class="content-excerpt">An introduction to Zenity, a tool for creating GUI dialog boxes in Linux shell scripts, including examples of creating pop-ups, notifications, and input dialogs. Learn how to make your shell scripts more user-friendly.</p>
+                        <div class="content-tags">
+                            <span class="content-tag">Linux</span>
+                            <span class="content-tag">GUI</span>
+                            <span class="content-tag">Shell Scripting</span>
+                            <span class="content-tag">Automation</span>
+                        </div>
+                        <a href="https://www.linkedin.com/pulse/zenity-how-use-sudhanshu-tiwari/" class="content-link" target="_blank">
+                            Read Full Article <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Links -->
+            <div class="content-more">
+                <a href="https://medium.com/@sudhanshutiwari264" class="btn primary-btn" target="_blank">
+                    <i class="fab fa-medium"></i> View All Medium Articles
+                </a>
+                <a href="https://www.linkedin.com/in/tiwari-sudhanshu/recent-activity/posts/" class="btn outline-btn" target="_blank" style="margin-left: 15px;">
+                    <i class="fab fa-linkedin"></i> View All LinkedIn Articles
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations Section -->
+    <section id="recommendations" class="section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Testimonials</span>
+                <h2 class="section-title">What my <span class="highlight">colleagues</span> and <span class="highlight">mentors</span> say about me</h2>
+            </div>
+
+            <div class="row mt-5">
+                <!-- Recommendation 1 -->
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-text">AV</div>
+                            </div>
+                            <div class="testimonial-meta">
+                                <h4>Aditya Vijay</h4>
+                                <p class="position">Mobile Application Developer</p>
+                                <p class="relation">Worked together on the same team</p>
+                                <p class="date">November 5, 2022</p>
+                            </div>
+                            <div class="linkedin-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"I have had the privileged to work with Sudhanshu as my team member. Sudhanshu is a kind, self-motivated, and hardworking coworker. He has a keen intellect. He also knows how to fit in with any situation or group of individuals. He's a team player who is always willing to assist a colleague whenever and wherever it is needed."</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recommendation 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <div class="avatar-text">CN</div>
+                            </div>
+                            <div class="testimonial-meta">
+                                <h4>Chirag Nagori</h4>
+                                <p class="position">DevOps Engineer</p>
+                                <p class="relation">Was Sudhanshu's mentor</p>
+                                <p class="date">October 11, 2022</p>
+                            </div>
+                            <div class="linkedin-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-body">
+                            <p>"We've worked together on several projects and Sudhanshu is one of the best people to have as a partner. I highly recommend him in presentation, managing and as an enthusiast learner, as he is very good in this. He knows how to help his pairs and get the best out of them."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="https://www.linkedin.com/in/tiwari-sudhanshu/details/recommendations/" class="btn primary-btn" target="_blank">
+                    <i class="fab fa-linkedin"></i> View All Recommendations on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GitHub Showcase Section -->
+    <section id="github-activity" class="github-showcase">
+        <div class="hexagon-bg"></div>
+        <div class="code-animation">
+function contribute() {
+  const passion = "Open Source";
+  const skills = ["JavaScript", "Python", "React"];
+
+  return skills.map(skill => {
+    return buildAwesomeProjects(skill, passion);
+  });
+}
+
+// Committed to code that matters
+contribute();
+        </div>
+        <div class="container github-showcase-container">
+            <div class="section-header github-header">
+                <span class="section-subtitle">Open Source</span>
+                <h2 class="section-title">Building the <span class="highlight">future</span> through <span class="highlight">code</span></h2>
+                <p class="section-description">Exploring new technologies and contributing to open source projects</p>
+            </div>
+
+            <div class="github-grid">
+                <!-- Featured Repository: SightEase -->
+                <div class="repo-card featured">
+                    <div class="repo-header">
+                        <h3 class="repo-name">SightEase</h3>
+                        <div class="repo-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                    </div>
+                    <p class="repo-description">Enhancing Accessibility through Vision-based Assistance. An AI-powered object detection application that helps visually impaired users navigate their environment.</p>
+                    <div class="repo-tags">
+                        <span class="repo-tag">Python</span>
+                        <span class="repo-tag">Computer Vision</span>
+                        <span class="repo-tag">Accessibility</span>
+                        <span class="repo-tag">AI</span>
+                    </div>
+                    <div class="repo-meta">
+                        <div class="repo-meta-item">
+                            <i class="fas fa-award"></i>
+                            <span>Hackathon Winner</span>
+                        </div>
+                        <div class="repo-meta-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Open Source</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/sudhanshutiwari264/SightEase" class="repo-link" target="_blank">
+                        View Repository <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Medium Repository 1: Chat-Application-Database -->
+                <div class="repo-card medium">
+                    <div class="repo-header">
+                        <h3 class="repo-name">Chat-Application-Database</h3>
+                        <div class="repo-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                    </div>
+                    <p class="repo-description">A robust and structured data storage solution for a chat application. Serves as the backbone for managing user accounts, friend relationships, and message history.</p>
+                    <div class="repo-tags">
+                        <span class="repo-tag">Database Design</span>
+                        <span class="repo-tag">SQL</span>
+                        <span class="repo-tag">HTML</span>
+                    </div>
+                    <div class="repo-meta">
+                        <div class="repo-meta-item">
+                            <i class="fas fa-star"></i>
+                            <span>13 stars</span>
+                        </div>
+                        <div class="repo-meta-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>1 fork</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/sudhanshutiwari264/Chat-Application-Database" class="repo-link" target="_blank">
+                        View Repository <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Medium Repository 2: Making-class-in-different-Programming-languages -->
+                <div class="repo-card medium">
+                    <div class="repo-header">
+                        <h3 class="repo-name">Making-class-in-different-Programming-languages</h3>
+                        <div class="repo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <p class="repo-description">An educational repository showcasing how to implement classes across different programming languages, making it easier to understand OOP concepts across language boundaries.</p>
+                    <div class="repo-tags">
+                        <span class="repo-tag">OOP</span>
+                        <span class="repo-tag">Multiple Languages</span>
+                        <span class="repo-tag">Education</span>
+                    </div>
+                    <div class="repo-meta">
+                        <div class="repo-meta-item">
+                            <i class="fas fa-book"></i>
+                            <span>Learning Resource</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/sudhanshutiwari264/Making-class-in-different-Programming-languages-" class="repo-link" target="_blank">
+                        View Repository <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Small Repository 1: AuthAndAuthorization -->
+                <div class="repo-card small">
+                    <div class="repo-header">
+                        <h3 class="repo-name">AuthAndAuthorization</h3>
+                        <div class="repo-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                    </div>
+                    <p class="repo-description">Implementation of authentication and authorization systems for web applications.</p>
+                    <div class="repo-tags">
+                        <span class="repo-tag">JavaScript</span>
+                        <span class="repo-tag">Security</span>
+                    </div>
+                    <a href="https://github.com/sudhanshutiwari264/AuthAndAuthorization" class="repo-link" target="_blank">
+                        View Repository <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Small Repository 2: m.e.w.v0 -->
+                <div class="repo-card small">
+                    <div class="repo-header">
+                        <h3 class="repo-name">m.e.w.v0</h3>
+                        <div class="repo-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <p class="repo-description">A web development project focused on creating a modern and responsive user interface.</p>
+                    <div class="repo-tags">
+                        <span class="repo-tag">HTML</span>
+                        <span class="repo-tag">Web Development</span>
+                    </div>
+                    <a href="https://github.com/sudhanshutiwari264/m.e.w.v0" class="repo-link" target="_blank">
+                        View Repository <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Small Repository 3: mini_project -->
+                <div class="repo-card small">
+                    <div class="repo-header">
+                        <h3 class="repo-name">mini_project</h3>
+                        <div class="repo-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                    </div>
+                    <p class="repo-description">A small-scale project demonstrating web development concepts and techniques.</p>
+                    <div class="repo-tags">
+                        <span class="repo-tag">EJS</span>
+                        <span class="repo-tag">Web Development</span>
+                    </div>
+                    <a href="https://github.com/sudhanshutiwari264/mini_project" class="repo-link" target="_blank">
+                        View Repository <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Small Repository 4: Links.io -->
+                <div class="repo-card small">
+                    <div class="repo-header">
+                        <h3 class="repo-name">Links.io</h3>
+                        <div class="repo-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                    </div>
+                    <p class="repo-description">A personal link aggregator website showcasing Sudhanshu's online presence and projects.</p>
+                    <div class="repo-tags">
+                        <span class="repo-tag">HTML</span>
+                        <span class="repo-tag">CSS</span>
+                        <span class="repo-tag">Personal Website</span>
+                    </div>
+                    <a href="https://github.com/sudhanshutiwari264/Links.io" class="repo-link" target="_blank">
+                        View Repository <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <!-- Contribution Graph -->
+                <div class="contribution-graph">
+                    <h3 class="contribution-title">My Contribution Activity</h3>
+                    <div class="contribution-visual">
+                        <div class="contribution-placeholder">
+                            <i class="fab fa-github"></i>
+                            <p>I'm actively contributing to open source projects and building my own repositories. My contributions include code, documentation, and community support.</p>
+                        </div>
+                    </div>
+
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code-branch"></i>
+                            </div>
+                            <div class="stat-value">18+</div>
+                            <div class="stat-label">Repositories</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-value">13+</div>
+                            <div class="stat-label">Stars Received</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="stat-value">50+</div>
+                            <div class="stat-label">Contributions</div>
+                        </div>
+
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-value">21</div>
+                            <div class="stat-label">Followers</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="github-cta">
+                <a href="https://github.com/sudhanshutiwari264" class="btn primary-btn" target="_blank">
+                    <i class="fab fa-github"></i> View My GitHub Profile
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Connect with me through these channels</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Email</h3>
+                            <p>sudhanshutiwari264@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="details">
+                            <h3>Location</h3>
+                            <p>Jaipur, Rajasthan, India</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/sudhanshutiwari264" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tiwari-sudhanshu/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.youtube.com/channel/UC9eDh5ByrCT2WinIji5Qyig" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://twitter.com/sudhanshusx" target="_blank" title="Twitter/X"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="contact-cta">
+                        <h3>Let's Connect!</h3>
+                        <p>I'm interested in connecting with fellow professionals in the Developer Relations and Software Engineering space. Feel free to reach out if you'd like to discuss industry trends or share ideas.</p>
+                        <div class="availability-box" style="background-color: rgba(79, 70, 229, 0.05); border-left: 2px solid var(--primary-color); padding: 10px; margin-top: 15px; border-radius: 4px;">
+                            <p style="margin: 0; font-size: 0.85rem;">Industry Experience: 2+ years working with enterprise technologies and cloud platforms. I check messages regularly and aim to respond to relevant inquiries when time permits.</p>
+                        </div>
+
+                        <div class="contact-buttons mt-4">
+                            <a href="contact-updated.html" class="btn primary-btn">
+                                <i class="fas fa-paper-plane"></i> Contact Form
+                            </a>
+                            <a href="mailto:sudhanshutiwari264@gmail.com" class="btn outline-btn ml-3">
+                                <i class="fas fa-envelope"></i> Email Me
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <div class="contact-card">
+                        <div class="card-header">
+                            <i class="fas fa-calendar-check"></i>
+                            <h3>Schedule a Meeting</h3>
+                        </div>
+                        <p>Interested in a professional networking conversation? Schedule a virtual coffee chat to discuss tech topics.</p>
+                        <div class="availability-info">
+                            <div class="availability-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Select times available on calendar</span>
+                            </div>
+                            <div class="availability-item">
+                                <i class="fas fa-video"></i>
+                                <span>Google Meet, Zoom, or Microsoft Teams</span>
+                            </div>
+                        </div>
+                        <a href="https://calendly.com/tiwari-sudhanshu/coffee-chat" target="_blank" class="btn primary-btn schedule-btn">
+                            <i class="fas fa-calendar-alt"></i> Schedule a Coffee Chat
+                        </a>
+                    </div>
+
+                    <div class="contact-card mt-4">
+                        <div class="card-header">
+                            <i class="fas fa-comments"></i>
+                            <h3>Quick Response</h3>
+                        </div>
+                        <p>I typically respond to all messages within 24-48 hours. For urgent inquiries, please mention it in your message.</p>
+                        <div class="response-time">
+                            <div class="availability-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Interested in technical discussions</span>
+                            </div>
+                            <div class="availability-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Open to knowledge sharing</span>
+                            </div>
+                            <div class="availability-item">
+                                <i class="fas fa-users"></i>
+                                <span>Passionate about community engagement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">Sudhanshu<span>Tiwari</span></a>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2024 Sudhanshu Tiwari. All rights reserved.</p>
+                    <p style="font-size: 0.75rem; margin-top: 5px; color: var(--text-secondary);">Personal site. Views and content are my own and not affiliated with any employer.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#certifications">Certifications</a>
+                    <a href="#blog">Blog & Speaking</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/certifications.js"></script>
+    <script src="js/volunteer.js"></script>
+    <script src="js/articles-talks.js"></script>
+    <script src="js/contact-form.js"></script>
+</body>
+</html>

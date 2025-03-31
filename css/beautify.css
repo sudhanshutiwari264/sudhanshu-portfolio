@@ -1,0 +1,702 @@
+/* 
+   Beautification Styles for Sudhanshu Tiwari's Portfolio
+   Adding modern design touches, animations, and visual enhancements
+*/
+
+/* ===== Enhanced Typography ===== */
+body {
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: -0.03em;
+}
+
+.hero-text h1 {
+    font-weight: 800;
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: gradientShift 8s ease infinite;
+    background-size: 300% 300%;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+}
+
+/* ===== Enhanced Cards ===== */
+.card, 
+.about-card, 
+.skill-card, 
+.experience-card, 
+.certification-card, 
+.project-card, 
+.testimonial-card, 
+.blog-card,
+.contact-card,
+.contact-form {
+    border-radius: 16px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.light-theme .card, 
+.light-theme .about-card, 
+.light-theme .skill-card, 
+.light-theme .experience-card, 
+.light-theme .certification-card, 
+.light-theme .project-card, 
+.light-theme .testimonial-card, 
+.light-theme .blog-card,
+.light-theme .contact-card,
+.light-theme .contact-form {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.card:hover, 
+.about-card:hover, 
+.skill-card:hover, 
+.experience-card:hover, 
+.certification-card:hover, 
+.project-card:hover, 
+.testimonial-card:hover, 
+.blog-card:hover,
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+/* ===== Enhanced Buttons ===== */
+.btn {
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    width: 100%;
+}
+
+.primary-btn {
+    background: var(--gradient-primary);
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease infinite;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+}
+
+.primary-btn:hover {
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.6);
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.1);
+}
+
+.secondary-btn:hover {
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.2);
+    transform: translateY(-3px);
+    background: rgba(79, 70, 229, 0.05);
+}
+
+/* ===== Enhanced Backgrounds ===== */
+.hero, .about, .skills, .experience, .certifications, 
+.projects, .testimonials, .blog, .contact {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before, 
+.about::before, 
+.skills::before, 
+.experience::before, 
+.certifications::before, 
+.projects::before, 
+.testimonials::before, 
+.blog::before, 
+.contact::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: 
+        radial-gradient(circle at 20% 30%, rgba(79, 70, 229, 0.03) 0%, transparent 20%),
+        radial-gradient(circle at 80% 70%, rgba(139, 92, 246, 0.03) 0%, transparent 20%);
+    pointer-events: none;
+}
+
+/* ===== Enhanced Animations ===== */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.image-wrapper {
+    animation: float 6s ease-in-out infinite;
+}
+
+.hero-badge {
+    animation: pulse 4s ease-in-out infinite;
+}
+
+/* ===== Enhanced Header ===== */
+.header {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(15, 23, 42, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.light-theme .header {
+    background-color: rgba(248, 249, 250, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Enhanced Scrollbar ===== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+}
+
+/* ===== Enhanced Form Elements ===== */
+input, textarea, select {
+    border-radius: 12px !important;
+    transition: all 0.3s ease !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+}
+
+.light-theme input, 
+.light-theme textarea, 
+.light-theme select {
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+    background: rgba(0, 0, 0, 0.02) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3) !important;
+    border-color: var(--primary-color) !important;
+}
+
+/* ===== Enhanced Icons ===== */
+.icon-wrapper, .contact-item .icon, .card-header i {
+    background: var(--gradient-primary);
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease infinite;
+    box-shadow: 0 4px 15px rgba(79, 70, 229, 0.3);
+}
+
+/* ===== Enhanced Footer ===== */
+.footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(circle at 10% 90%, rgba(79, 70, 229, 0.05) 0%, transparent 30%),
+        radial-gradient(circle at 90% 10%, rgba(139, 92, 246, 0.05) 0%, transparent 30%);
+    pointer-events: none;
+}
+
+/* ===== Enhanced Theme Toggle ===== */
+.theme-toggle {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background: var(--gradient-primary);
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease infinite;
+}
+
+.theme-toggle i {
+    color: white;
+}
+
+/* ===== Enhanced Back to Top Button ===== */
+.back-to-top {
+    background: var(--gradient-primary);
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease infinite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top i {
+    color: white;
+}
+
+/* ===== Enhanced Section Transitions ===== */
+section {
+    transition: background-color 0.5s ease;
+}
+
+/* ===== Enhanced Image Effects ===== */
+.about-image img, .project-image img, .certification-image img {
+    transition: all 0.5s ease;
+}
+
+.about-image:hover img, .project-image:hover img, .certification-image:hover img {
+    transform: scale(1.05);
+}
+
+/* ===== Enhanced Text Selection ===== */
+::selection {
+    background: var(--primary-color);
+    color: white;
+}
+
+/* ===== Enhanced Focus States ===== */
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3);
+}
+
+/* ===== Enhanced List Styles ===== */
+ul.custom-list {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+ul.custom-list li {
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+ul.custom-list li::before {
+    content: '';
+    position: absolute;
+    left: -1.5rem;
+    top: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: var(--primary-color);
+    border-radius: 50%;
+}
+
+/* ===== Enhanced Skill Bars ===== */
+.skill-progress {
+    height: 8px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.light-theme .skill-progress {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.skill-progress-bar {
+    height: 100%;
+    border-radius: 4px;
+    background: var(--gradient-primary);
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease infinite;
+}
+
+/* ===== Enhanced Quotes ===== */
+blockquote {
+    border-left: 4px solid var(--primary-color);
+    padding-left: 1rem;
+    font-style: italic;
+    margin: 1.5rem 0;
+    position: relative;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 4rem;
+    position: absolute;
+    left: -1rem;
+    top: -2rem;
+    opacity: 0.1;
+    color: var(--primary-color);
+}
+
+/* ===== Enhanced Social Icons ===== */
+.social-bar a, .social-links a {
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-bar a:hover, .social-links a:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+/* ===== Enhanced Hover Effects ===== */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* ===== Enhanced Cursor ===== */
+a, button, .btn, .theme-toggle, .back-to-top, .hamburger {
+    cursor: pointer;
+}
+
+/* ===== Enhanced Shadows ===== */
+.enhanced-shadow {
+    box-shadow: 
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.light-theme .enhanced-shadow {
+    box-shadow: 
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05),
+        0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Enhanced Dividers ===== */
+.divider {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border-color), transparent);
+    margin: 2rem 0;
+}
+
+/* ===== Enhanced Tooltips ===== */
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-5px);
+    background: var(--card-bg);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10px);
+}
+
+/* ===== Enhanced Badges ===== */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--gradient-primary);
+    color: white;
+    box-shadow: 0 2px 5px rgba(79, 70, 229, 0.3);
+}
+
+/* ===== Enhanced Stat Items ===== */
+.stat-item {
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.light-theme .stat-item {
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-color);
+}
+
+/* ===== Enhanced Blob Animation ===== */
+.blob {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: var(--gradient-blob);
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.3;
+    z-index: -1;
+    animation: blob-animation 15s infinite alternate;
+}
+
+@keyframes blob-animation {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+    33% {
+        transform: translate(100px, -50px) scale(1.1);
+    }
+    66% {
+        transform: translate(-50px, 100px) scale(0.9);
+    }
+    100% {
+        transform: translate(70px, 70px) scale(1);
+    }
+}
+
+.hero .blob {
+    top: -200px;
+    right: -200px;
+}
+
+.about .blob {
+    bottom: -200px;
+    left: -200px;
+}
+
+.skills .blob {
+    top: -200px;
+    left: -200px;
+}
+
+.experience .blob {
+    bottom: -200px;
+    right: -200px;
+}
+
+/* Responsive blobs for smaller screens */
+@media (max-width: 768px) {
+    .blob {
+        width: 300px;
+        height: 300px;
+        filter: blur(60px);
+    }
+
+    .hero .blob {
+        top: -100px;
+        right: -100px;
+    }
+
+    .about .blob {
+        bottom: -100px;
+        left: -100px;
+    }
+
+    .skills .blob {
+        top: -100px;
+        left: -100px;
+    }
+
+    .experience .blob {
+        bottom: -100px;
+        right: -100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .blob {
+        width: 200px;
+        height: 200px;
+        filter: blur(40px);
+    }
+
+    .hero .blob {
+        top: -50px;
+        right: -50px;
+    }
+
+    .about .blob {
+        bottom: -50px;
+        left: -50px;
+    }
+
+    .skills .blob {
+        top: -50px;
+        left: -50px;
+    }
+
+    .experience .blob {
+        bottom: -50px;
+        right: -50px;
+    }
+}
+
+/* ===== Enhanced Loading Animation ===== */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.loading.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s ease-in-out infinite;
+}
+
+@media (max-width: 576px) {
+    .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border-width: 2px;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ===== Enhanced Page Transitions ===== */
+.page-transition {
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Enhanced Scroll Indicator ===== */
+.scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: var(--gradient-primary);
+    background-size: 200% 200%;
+    animation: gradientShift 4s ease infinite;
+    z-index: 9999;
+    width: 0%;
+    transition: width 0.1s ease;
+}
+
+@media (max-width: 576px) {
+    .scroll-indicator {
+        height: 2px;
+    }
+}
